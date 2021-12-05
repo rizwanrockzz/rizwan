@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  min-height: 50px;
+  align-items: center;
+  background: #40e0d0;
+  background: -webkit-linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
+  background: linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
+}
+
+header p {
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+
+.container {
+  margin: 20vh auto;
+}
+
+.main-head {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.main-head-2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.lead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#time {
+  margin-left: 10px;
+  display: flex;
+}
+
+.tag {
+  font-weight: 400;
+}
+
+.foot {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  background: #00f260;
+  background: -webkit-linear-gradient(to right, #0575e6, #00f260);
+  background: linear-gradient(to right, #0575e6, #00f260);
+}
+
+@media only screen and (max-width: 768px) {
+  .main-head {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .main-head {
+    font-size: 1.7rem;
+  }
+  .main-head-2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  header {
+    flex-direction: column;
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .main-head {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .main-head {
+    font-size: 1.4rem;
+  }
+}

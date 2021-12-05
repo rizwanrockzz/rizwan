@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="stylesheet" href="time.css" />
+    <title>Indian Clock</title>
+
+    <!-- logic -->
+    <script>
+      let a;
+      let date;
+      let Time;
+      setInterval(() => {
+        a = new Date();
+        date = a.toDateString();
+        Time = a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds();
+        document.getElementById("time").innerHTML = Time;
+        document.getElementById("date").innerHTML = " On " + date;
+      }, 1000);
+    </script>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <header>
+      <p class="logo">R'Clock</p>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">IST</a>
+        <a href="#">GMD</a>
+      </div>
+    </header>
+
+    <!-- body -->
+
+    <div class="container">
+      <p class="main-head lead">Current Time : <span id="time"></span></p>
+      <p class="main-head-2 lead"><span id="date"></span></p>
+      <p class="lead tag">You are on top of the World with RIZWAN network</p>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <p class="foot">Copyright &copy; all rights are reserved</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
