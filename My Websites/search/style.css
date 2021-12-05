@@ -1,0 +1,33 @@
+#search {
+  /* border-radius: 5px; */
+  border: 0.2px solid rgb(177, 177, 177);
+  width: 40%;
+  padding: 10px;
+}
+
+#search:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.search-bar {
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  padding-top: 10px;
+  background-color: cornsilk;
+  padding: 20px;
+}
+
+.submit-btn {
+  padding: 10px;
+  margin: auto;
+  background-image: url("https://img.icons8.com/ios-filled/30/000000/search--v2.png");
+  
+
+
+}
