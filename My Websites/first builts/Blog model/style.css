@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Dancing+Script:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+
+}
+
+/* Nav Bar */
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 425px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+}
+
+/* Navbar logo */
+
+#logo {
+  margin: 10px 5px;
+}
+#logo img {
+  width: 55px;
+  margin: 1px 16px;
+  border-radius: 50%;
+}
+
+/* Navbar list */
+#navbar ul {
+  display: flex;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 3px 12px;
+  border-radius: 20px;
+  /* margin: 10px 20px; */
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background: white;
+}
+
+/* Home Section  */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+  padding: 10px;
+  color: white;
+}
+
+#home::before {
+  content: "";
+  background: url(./images/bg3.jpg) no-repeat center/cover;
+  background-color: #1a1a1a;
+  position: absolute;
+  height: 70%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+}
+
+#home h1 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+
+#home p {
+  font-size: 1.3rem;
+  padding: 2px;
+  text-align: center;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+/* Services section */
+
+.services {
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row wrap;
+  height: 300px;
+}
+
+.services .box {
+  border: 0.5px solid rgb(197, 197, 197);
+  margin: 10px 40px;
+  padding: 10px;
+  padding-bottom: 25px;
+  height: 315px;
+  border-radius: 10px;
+}
+
+.services .box:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.services .box img {
+  width: 300px;
+  margin: auto;
+  display: block;
+}
+
+/* Clients Section */
+
+.client-section{
+  height: 300px;
+}
+
+.clients{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients .client-items{
+  padding: 20px;
+}
+
+.fab{
+  font-size: 100px;
+  padding: 20px 60px;
+  color:#d1d7dc ;
+  flex-direction: row wrap;
+  
+}
+
+/*  */
+
+/* Utiliy classes */
+.primary-heading {
+  font-size: 2.1rem;
+  padding: 5px;
+}
+
+.primary-heading-2 {
+  font-size: 2.1rem;
+  padding-top: 45px;
+}
+
+.secondary-heading {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.title-heading {
+  font-size: 3.5rem;
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+.adjusted-top {
+  padding-top: 180px;
+}
+
+hr{
+  border-top: 6px dotted rgb(192, 192, 192);
+  width: 5%;
+  margin: 40px auto;
+}
+
+.below-box{
+  border-top: 6px dotted rgb(192, 192, 192);
+  width: 5%;
+  margin: 100px auto 20px auto;
+}

@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Open+Sans&family=Roboto&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: #1c235b;
+}
+
+::selection {
+  color: white;
+  background: #1c235b;
+}
+
+header {
+  text-align: center;
+  color: white;
+  background: #43c6ac;
+  background: -webkit-linear-gradient(to right, #191654, #43c6ac);
+  background: linear-gradient(to right, #191654, #43c6ac);
+  padding: 60px;
+}
+
+h1 {
+  font-family: "Klee One", cursive;
+  font-size: 2.5rem;
+  padding: 15px;
+}
+
+header p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-family: "Klee One", cursive;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 500;
+}
+
+/* navbar */
+
+nav {
+  background: red;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav ul li a {
+  margin: 15px;
+  text-decoration: none;
+  padding: 5px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+a:hover {
+  border-bottom: 3px solid #0f9;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+  padding: 50px 20%;
+}
+
+.grid p {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.308);
+  padding: 25px;
+  border-radius: 5px;
+  background: rgba(128, 128, 128, 0.103);
+}
+
+.grid p:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 10px 10px 30px 10px;
+}
+
+footer {
+  font-family: "Lato", sans-serif;
+  background-color: black;
+  /* position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%; */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.5rem;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 680px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  nav ul {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav ul li{
+    padding: 10px;
+  }
+}

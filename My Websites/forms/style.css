@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: #59c173;
+  background: -webkit-linear-gradient(to right, #5d26c1, #a17fe0, #59c173);
+  background: linear-gradient(to right, #5d26c1, #a17fe0, #59c173); */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  width: 31.25rem; /* 500px */
+  height: 37.5rem; /* 600px */
+  background: rgba(255, 255, 255, 0.219);
+  border-radius: 10px;
+  margin: 10px;
+  /* border: 5px solid blue; */
+}
