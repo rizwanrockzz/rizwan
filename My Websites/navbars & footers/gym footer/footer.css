@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 10px 10%;
+}
+
+.heading {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.col a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  padding: 5px 0;
+}
+
+.end-line {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.copy {
+  text-transform: capitalize;
+}
+
+.social i {
+  font-size: 1.3rem;
+  padding: 0;
+}
+/*
+.social-links .fa-twitter:hover {
+  color: #5da9dd;
+}
+.social-links .fa-facebook-f:hover {
+  color: #087cea;
+}
+.social-links .fa-instagram:hover {
+  color: red;
+}
+.social-links .fa-snapchat-ghost:hover {
+  color: yellow;
+}
+.social-links .fa-pinterest:hover {
+  color: #b7081b;
+}
+.social-links .fa-linkedin:hover {
+  color: #0a66c2;
+} */
+
+/* responsiveness */
+
+@media screen and (max-width: 370px) {
+  .grid-wrap {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+
+  .end-line {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo{
+    margin-top: 20px;
+  }
+
+  .copy{
+    margin: 20px auto;
+  }
+
+  .social a{
+    padding: 0 10px;
+  }
+}

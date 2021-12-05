@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #8a2387;
+  background: -webkit-linear-gradient(to right, #f27121, #e94057, #8a2387);
+  background: linear-gradient(to right, #f27121, #e94057, #8a2387);
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 3rem;
+}
+
+.face-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.face {
+  height: 300px;
+  width: 300px;
+  background: yellow;
+  /* border-radius: 50%; */
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.face::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 70px;
+  background: blue;
+  top: 270px;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+
+.face::before {
+  content: "";
+  position: absolute;
+  top: 190px;
+  /* top: 185px; */
+  width: 150px;
+  height: 65px;
+  background: rgb(243, 181, 11);
+  /* background: white; */
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  transition: 0.5s;
+  border: 2px solid white;
+}
+
+.face:hover::before {
+  top: 220px;
+  width: 150px;
+  height: 20px;
+  background: rgb(243, 181, 11);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  transition: 0.5s;
+  border: 0;
+}
+
+.eyes {
+  display: flex;
+  /* top: -45px; */
+  top: -30px;
+  position: relative;
+}
+
+.eyes .eye {
+  position: relative;
+  background: white;
+  width: 125px;
+  height: 125px;
+  /* width: 160px;
+  height: 160px; */
+  margin: 0 6px;
+  /* margin: 0 15px; */
+  border-radius: 50%;
+  display: block;
+  border: 15px solid silver;
+}
+
+.eyes .eye::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  background: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  /* position: absolute;
+  bottom: 20px;
+  left: 35%; */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Roboto Mono", monospace;
+  margin-top: 100px;
+}
+
+footer .line {
+  /* display: inline-block; */
+  text-decoration: line-through;
+  padding: 0 10px;
+}
+
+@media only screen and (max-width: 550px) {
+  footer {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  footer {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  footer {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  footer {
+    font-size: 0.7rem;
+  }
+}
+

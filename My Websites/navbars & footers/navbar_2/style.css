@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@500&family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background: black; */
+  font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background: black;
+}
+
+header {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  font-size: 1.2rem;
+}
+
+li,
+a,
+button {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  cursor: pointer;
+  font-family: "Lemonada", cursive;
+  color: rgb(19, 233, 215);
+  margin-right: auto;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: rgb(19, 233, 215);
+}
+
+button {
+  padding: 9px 25px;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  background-color: rgba(19, 233, 215, 0.692);
+  color: white;
+  margin-left: 20px;
+}
+
+button:hover{
+  background-color: rgba(19, 233, 215, 0.808);
+}
